@@ -39,4 +39,4 @@ client.on('guildBanAdd' , (guild, user) => {
   if (!banned) return;
   banned.send('**Bir suçun cezasıda olmalı!** https://media.giphy.com/media/8njotXALXXNrW/giphy.gif '+ user.username +'**uza.** :spy:' );
 });
-client.login('NjE0MDcxNzM4NTM5NTczMjQ4.XXThMQ.zZj9VDlSclOsX9C5cB8-hEHYDYE');
+client.login(process.env.TOKEN);
