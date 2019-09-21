@@ -1,0 +1,36 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(`Botun konsoluna ${client.user.tag} giriþ yaptýnýz!`);
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sa') {
+    msg.reply('Aleyküm Selam ve Rahmetullahi ve Berekatuhu ve Magfiratuhu Ebeden ve Daimen');
+
+}
+  if (msg.content.toLowerCase() === 'kurucuiletisim') {
+    msg.reply('https://steamcommunity.com/profiles/76561198839515930/');
+  }
+  if (msg.content.toLowerCase() === 'kemal kimdir?') {
+    msg.reply('OROSPU ÇOCUÐUDUR');
+  }
+
+  if (msg.content.toLowerCase() === 'fixann') {
+    msg.channel.sendMessage('https://steamcommunity.com/id/SgBox/');
+  }
+  if (msg.content.toLowerCase() === 'seni kim yarattý?') {
+    msg.channel.sendMessage('Buðra beyimiz.');
+  }
+
+  if (msg.content.toLowerCase() === 'söv') {
+    msg.channel.sendMessage('ananýn amýna teletabinin antenlerini sokar göbeðindeki televizyondan ulusal porno yayýný yaparýmananý özgürlük heykelinin yanmayan meþalesinde siker þehri duman ederimhollywood bulvarýnda donla gezen ananýn amýna topuklu ayakkabý sokayýmananý ikiz kulelerinin yedinci katýna cýkartýr amýna uçakla girerim..ananýn o dazlak kafasýna teflon tavayla vurur sersemletir sikerim.ananýn buruþmuþ amýna tefal ütü basar dümdüz ederim.ananýn amýna windows 7 kurar mavi ekran hatasý verinceye kadar sikerim.ananýn amýna telefon kablosu sokar paralel hattan bacýný skermgardolapta tangasýný arayan ananýn kafasýný dolap kapagýna sýkýþtýrýr müjde ar gibi sikerimdaðdan inmediði icin yüzme bilmeyen ananý büyük pasificte 1 ton boþalan beyaz balinalarla beraber-- siker olimpiyat yüzme þampiyonasýnda altýn madalya kazandýrýrýmkýrmýzý eþarp giyip ormanda kýrmýzý baþlýklý kýz gibi takýlan anana kurt gibi yaklaþýr amýný param parça ederimmmpikachuuuuuuuuu diye camdan atlayan sipastik ananýn amýna poke topu fýrlatýrýmananý balbasaurun sarmaþýk kýrbacýyla dolar pikacuyla kanka olur veririm elektriðiedisonla kanka olur ananý fakir mahallenizde yanmayan sokak direðine baðlar sike sike trafoyu patlatýrýmhani benim gençliðim nerde diyen orospu cocugu seni.tavþan kostümü giyip fotograf cektirince kendini playboy dergisinde kapak sanan ananýn amýna evdeki elektrik süpürgesini sokarýmananla karþýlýklý salsa yaparken piste takla atarak giren orospu cocugu ');
+  }
+});
+client.on('guildBanAdd' , (guild, user) => {
+  let banned = guild.channels.find('name', 'banned');
+  if (!banned) return;
+  banned.send('**Bir suçun cezasýda olmalý!** https://media.giphy.com/media/8njotXALXXNrW/giphy.gif '+ user.username +'**uza.** :spy:' );
+});
+client.login('NjE0MDcxNzM4NTM5NTczMjQ4.XWZVAw.DanRJnTpSNxegwfIvyW2F6cL0VM');
